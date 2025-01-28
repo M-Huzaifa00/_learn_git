@@ -253,7 +253,34 @@ After creating the branch, you can switch to it using:
  # Alternatively, you can combine both creating and switching to the branch with this command:
  git checkout -b huzaifa-feat
 ```
-Now you’re on the huzaifa-feat branch and ready to start working! 💻🚀
+Now you’re on the huzaifa-feat branch and ready to start working! 💻🚀, 
+Inside huzaifa-feat add some dummy code and commits.After that checkout to main branch.
+
+### 🔀 **Git Merge** 🔀
+
+To merge changes from a remote branch (e.g., `huzaifa-feat` on `origin`) into your local `main` branch, use the following command:
+
+```bash
+# Merging changes from the remote 'huzaifa-feat' branch into the local 'main' branch
+git merge origin/huzaifa-feat
+```
+
+#### 📜 Explanation:
+* origin/huzaifa-feat: Refers to the remote huzaifa-feat branch.
+* This command will merge the changes from the remote branch (huzaifa-feat) into your currently checked-out branch (which should be main in this case).
+
+### ⚡ Pro Tip:
+Before merging, it's a good idea to ensure your local main branch is up-to-date with:
+
+```bash
+git pull origin main
+```
+
+This ensures you're merging the latest changes and avoids conflicts. Happy coding! 💻✨, 
+Now locally you have merge origin/huzaifa-feat now you have to push that local branch on remote.
+```bash
+ git push origin main"
+```
 
 
 
