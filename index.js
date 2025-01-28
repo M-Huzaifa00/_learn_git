@@ -9,3 +9,7 @@ function sayHi() {
 function isAbove18() {
   return true;
 }
+
+function newFeatureFromHuzaifaFeatBranch() {
+  console.log("This is new feature added by huzaifa-feat branch.");
+}
