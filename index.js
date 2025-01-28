@@ -12,4 +12,5 @@ function isAbove18() {
 
 function newFeatureFromHuzaifaFeatBranch() {
   console.log("This is new feature added by huzaifa-feat branch.");
+  console.log("The new feature A.");
 }
