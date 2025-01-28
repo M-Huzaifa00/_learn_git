@@ -279,9 +279,62 @@ git pull origin main
 This ensures you're merging the latest changes and avoids conflicts. Happy coding! 💻✨, 
 Now locally you have merge origin/huzaifa-feat now you have to push that local branch on remote.
 ```bash
- git push origin main"
+ git push origin main
 ```
 
 
+# Git Branch Naming Convention
 
+## Key Guidelines
 
+- **Use grouping tokens** (words) at the beginning of your branch names.
+- **Define and use short lead tokens** to differentiate branches meaningfully for your workflow.
+- **Use slashes** to separate parts of your branch names.
+- **Avoid bare numbers** as leading parts.
+- **Avoid long descriptive names** for long-lived branches.
+
+## Grouping Tokens
+
+Use grouping tokens at the beginning of your branch names to categorize branches:
+
+- `group1/foo` 🍽️
+- `group2/foo` 🍔
+- `group1/bar` 🧃
+- `group2/bar` 🍕
+- `group3/bar` 🍩
+- `group1/baz` 🍒
+
+These "grouping" tokens can be whatever makes sense for your workflow—short nouns that categorize your branches.
+
+## Short, Well-defined Tokens
+
+Choose short tokens that clearly indicate the purpose of the branch without adding unnecessary noise:
+
+- **`wip/`** 🛠️ — Work in progress; things that are not finished yet
+- **`feat/`** 🚀 — A feature being added or expanded
+- **`bug/`** 🐞 — Bug fix or experiment
+- **`junk/`** 💥 — A throwaway branch for experimentation
+
+Each of these tokens tells you what part of the workflow the branch belongs to.
+
+## Workflow Cycle Tokens
+
+You can also use abbreviated versions of your workflow cycle stages, like:
+
+- `new/` 🆕 — New development or features
+- `test/` 🧪 — Testing phase
+- `verified/` ✅ — Verified, working code
+
+By using these, you can maintain clarity about the stage of your work and organize your branches effectively.
+
+---
+
+### Example Branch Names:
+
+- `feat/new-login`
+- `bug/fix-login-button`
+- `wip/experimental-ui`
+- `test/user-authentication`
+- `verified/checkout-process`
+
+By following these guidelines, you'll have a clear, organized way to manage your branches.
