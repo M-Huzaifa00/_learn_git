@@ -44,6 +44,10 @@ git rm <path || file_name>
 git rm -f <path || file_name>
 # force remove
 git rm -f ./utils/index.js
+# but you loose all previous commits
+git reset --hard <commit_hash>
+# remove specfic commit code from codebase
+git revert <commit_hash>
 ```
 
 ## Introduction to Commit
@@ -61,7 +65,11 @@ Like who and when someone commit code and what changes he did.
 git log
 git log --oneline
 git log <banch_name>
-git show <commit_id>
+git show <commit_hash>
+# Move head and loose previous commits
+git reset --hard <commit_hash>
+# If you want to remove change from specifc commit but wanted to retain commit.
+git revert <commit_hash> 
 ```
 
 
