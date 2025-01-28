@@ -195,6 +195,9 @@ git remote -v
 ## 🌱 Branching
 One of the best practices for maintaining a clean main branch is to create a separate feature branch for each new task or feature you're working on. By doing this, you can isolate all your development work, including any experimentation or "dirty work," from the main codebase.
 
+### 🌿 Sample Branching Image 🌳
+![Branching image](./imgs/branching.png)
+
 **This approach offers several key benefits**
 
 * Isolated Development: You can freely work on a feature or bug fix without worrying about affecting the main branch. If something goes wrong or if you decide to abandon the work, you can do so without any repercussions on the main codebase.
@@ -212,3 +215,46 @@ Work on the branch with as many commits as necessary to implement the feature or
 Once done, and after testing, squash all commits into a single commit to keep the main branch history clean.
 Merge the feature branch into the main branch.
 If things go wrong, revert the single merge commit rather than handling multiple individual commits.
+
+
+## 🌿 **Check Your Current Branch** 🌿
+To find out which branch you are currently working on, run the following command:
+```bash
+git branch
+```
+
+
+### 📜 Output Example:
+```branch
+ # (*) represent current branch
+ * main
+  feature/new-feature
+  bugfix/fix-issue
+```
+
+## 🌱 **Create a New Branch** 🌱
+
+To create a new branch, use the following command:
+
+```bash
+git branch huzaifa-feat
+```
+
+### 📝 Explanation:
+* huzaifa-feat is the name of the new branch you want to create.
+* This command creates the branch but does not switch to it.
+
+### 🔄 To Switch to the New Branch:
+After creating the branch, you can switch to it using:
+
+```bash
+ git checkout huzaifa-feat
+
+ # Alternatively, you can combine both creating and switching to the branch with this command:
+ git checkout -b huzaifa-feat
+```
+Now you’re on the huzaifa-feat branch and ready to start working! 💻🚀
+
+
+
+
