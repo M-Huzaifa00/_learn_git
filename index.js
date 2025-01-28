@@ -15,3 +15,7 @@ function newFeatureFromHuzaifaFeatBranch() {
   console.log("The new feature A.");
   console.log("Assume I have done this work.");
 }
+
+function newFeatureFromFeatDummy() {
+  console.log("Feat-dummy: new feature.");
+}
