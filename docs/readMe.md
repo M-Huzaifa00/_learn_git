@@ -65,6 +65,7 @@ Like who and when someone commit code and what changes he did.
 git log
 git log --oneline
 git log <banch_name>
+# To see changes done in particular commit 
 git show <commit_hash>
 # Move head and loose previous commits
 git reset --hard <commit_hash>
@@ -155,3 +156,28 @@ C:\Practice\Git\Play with git> git blame index.js
 ```
 
 
+# Github 
+A remote server to host code.
+
+
+## Setting up github
+This is my github repo remote address https://github.com/M-Huzaifa00/_learn_git.git.
+
+
+### How to set up git with remote
+```bash
+git add remote remote_name remove_uri_address
+# like this git add remote origin https://github.com/M-Huzaifa00/_learn_git.git
+git remote -v
+# to check is remote repo is correctly set-up.
+```
+
+
+### Push code to remote
+
+
+```bash
+# push my code on origin(name of remote uri) there in main branch
+git push -u origin main
+git push origin main
+```
